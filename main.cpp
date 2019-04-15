@@ -11,15 +11,13 @@ int main(int argc, char* argv[]) {
         if(strcmp(argv[1], "-s") == 0) {
             Scanner scanner;
             Token t;
-
             std::string result = "";
             while ((t = scanner.nextToken()) != T_EOF) {
                 if(t == T_SEMICOLON) {
                     scanner.eatToken(t);
                     scanner.nextToken();
                     continue;  
-                } 
-
+                }
                 result +=  " " + tokenToString(t);
                 if(t == T_NUMBER) result += std::to_string(scanner.getNumberValue());
                 scanner.eatToken(t);
