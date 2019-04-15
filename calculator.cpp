@@ -22,10 +22,10 @@ Scanner::Scanner(){
         total_input += single_char;
         
     }
-    total_input = total_input.substr(0,total_input.size()-1);
-    if (total_input[0] == '-' && total_input[1] == 'n'){
-        total_input = total_input.substr(2,total_input.size());
-    }
+    // total_input = total_input.substr(0,total_input.size()-1);
+    // if (total_input[0] == '-' && total_input[1] == 'n'){
+    //     total_input = total_input.substr(2,total_input.size());
+    // }
 
     //cout << "total_input after constructor: " << total_input << " ";
 
